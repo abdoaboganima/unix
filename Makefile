@@ -5,8 +5,8 @@ README.md: guessinggame.sh
 	@echo -n "<br />**The date is:** " >> $@
 	@date >> $@
 
-	@echo -n "**The number of lines in guessingstring.sh is =** " >> $@
-	@wc -l $< >> $@
+	@echo -n "<br />**The number of lines in \`guessinggame.sh\` is =** " >> $@
+	@cat $< | wc -l  >> $@
 
 .PHONY:clean
 clean:
